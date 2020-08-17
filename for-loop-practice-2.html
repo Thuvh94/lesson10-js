@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for-loop-practice-2</title>
+</head>
+<body>
+<!--Bài 2: Viết chương trình nhập vào một số bất kỳ lớn hơn 0. Tính tổng các phần tử từ 1 đến số vừa nhập vào.-->
+<p id="sum"></p>
+<script>
+    let num=parseInt(prompt("Hãy nhập một số bất kỳ lớn hơn 0"));
+    let i;
+    let sum=0;
+    for(i=1;i<= num;i++){
+        sum += i;
+    }
+    document.getElementById("sum").innerHTML = "Tổng các phần tử từ 1 đến số bạn vừa nhập bằng " + sum +".";
+</script>
+</body>
+</html>
