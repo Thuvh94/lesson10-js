@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice-loop-1-2</title>
+</head>
+<body>
+<!--Bài 2: Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập.-->
+<!--Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ. Nếu nhiệt độ dưới 20,-->
+<!--yêu cầu người dùng tăng nhiệt độ.-->
+<script>
+    let tem=+prompt("Hãy nhập nhiệt độ hiện tại");
+    while(tem>100){
+        alert('Hãy giảm nhiệt độ');
+        tem=prompt("Vui lòng nhập lại");
+    }
+    while (tem<20){
+        alert('Hãy tăng nhiệt độ');
+        tem=prompt("Vui lòng nhập lại");
+    }
+    if (20>tem && tem<100);
+    alert("Cảm ơn bạn đã nhập nhiệt độ chính xác");
+</script>
+</body>
+</html>
