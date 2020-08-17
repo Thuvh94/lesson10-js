@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while-loop-practice</title>
+</head>
+<body>
+<!--Bài 1: Viết chương trình nhập vào một số từ hộp thoại, việc nhập kết thúc khi người dùng nhập vào giá trị -1.-->
+<!--Mỗi giá trị nhập được sẽ được hiển thị ra và thực hiện tính tổng các giá trị đó.-->
+<script>
+    let num=parseInt(prompt('Hãy nhập một số bất kỳ'));
+    let sum=0;
+    while (num!==-1){
+        num=parseInt(prompt('Hãy nhập một số bất kỳ'));
+        alert(num);
+        sum +=num;
+    }
+    confirm("Tổng các số bạn đã nhập bằng " +sum);
+
+</script>
+</body>
+</html>
