@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice loop 1-6</title>
+</head>
+<body>
+<p>Nhập số lượng số chia hết cho 7 bạn muốn hiển thị ra</p>
+<input type="number" id="input" name="input">
+<input type="button" value="Hiển thị và tính tổng" id="show" onclick="calculate()">
+<p id="result"></p>
+<p id="showSum"></p>
+<script>
+    function calculate() {
+        let number = parseInt(document.getElementById('input').value);
+        let result = 1;
+        let sum=0;
+        for (let count = 1; count <= number; count++) {
+            result = count * 7;
+            document.getElementById("result").innerHTML += result + "<br>";
+            sum += result;
+        } document.getElementById("showSum").innerText="Tổng bằng " +sum;
+    }
+</script>
+</body>
+</html>
