@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display-first-10-prime-number</title>
+</head>
+<body>
+<input type="button" value="Hiển thị 20 số nguyên tố đầu tiên" onclick="displayPrime()">
+<!--Trong phần này, chúng ta sẽ phát triển một ứng dụng cho phép hiển thị 20 số nguyên tố đầu tiên.-->
+<!--Điều kiện lặp: count (biến đếm) đến 20 số thì dừng. -->
+<!--lệnh thực hiện: document.write số đó và count ++-->
+<script>
+    function displayPrime() {
+        let n=1;
+        let count = 0;
+        while (count <= 20) {
+            if (isPrime(n)) {
+                document.write(n+"<br>");
+                count++;
+            }  n++;
+        }
+    }
+    function isPrime(n) {
+        if (n < 2)
+            return false;
+        for(let i=2; i<= Math.sqrt(n); i++) {
+            if (n % i === 0){
+                return false;
+            } else {
+                return true;
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

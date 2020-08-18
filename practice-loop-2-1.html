@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display fibonaccy</title>
+</head>
+<body>
+<!--Bài 1: In dãy Finonaci-->
+<h1>Hiển thị dãy số Fibonacci</h1>
+<p>Hãy nhập số lượng số Fibonacci bạn muốn hiển thị</p>
+<input type="number" id="num" name="num">
+<input type="button" id="show" value="Hiển thị" onclick="display()">
+<p id="result"></p>
+<script>
+    function display() {
+        let i = 1;
+        let j = 0;
+        let add;
+        let count = 1;
+        let num = parseInt(document.getElementById('num').value);
+        let result=document.getElementById('result');
+        while (count <= num) {
+            add = i;
+            i = i + j;
+            j = add;
+            result.innerHTML+= j +"<br> ";
+            count++;
+        }
+    }
+</script>
+</body>
+</html>

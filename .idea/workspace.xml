@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bd4f540-34e7-461b-9d06-3c118718126e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/lesson10.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +25,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -42,7 +40,14 @@
       <option name="presentableId" value="Default" />
       <updated>1597629542811</updated>
       <workItem from="1597629544180" duration="1457000" />
-      <workItem from="1597631028900" duration="5236000" />
+      <workItem from="1597631028900" duration="15618000" />
+      <workItem from="1597673333206" duration="790000" />
+      <workItem from="1597674148853" duration="3024000" />
+      <workItem from="1597677205701" duration="3001000" />
+      <workItem from="1597717670720" duration="13962000" />
+      <workItem from="1597736422892" duration="4618000" />
+      <workItem from="1597750102991" duration="589000" />
+      <workItem from="1597756858628" duration="1589000" />
     </task>
     <servers />
   </component>
@@ -54,5 +59,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="290" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1597637247937" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597737051353">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597737051353" />
   </component>
 </project>
