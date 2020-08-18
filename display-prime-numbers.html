@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hien thi 20 so nguyen to dau tien</title>
+</head>
+<body>
+<input type="number" id="num" placeholder="Nhập số lượng số nguyên tố bạn muốn hiển thị" style="width:400px;height: 25px">
+<input type="button" id="show" value="Hiển thị" onclick="display();">
+<p id="result"></p>
+<script>
+    function display() {
+        let num = parseInt(document.getElementById("num").value);
+        let count = 0;
+        let result = document.getElementById("result");
+        let n = 2;
+        while (count < num) {
+            if (isPrimeNum(n)) {
+                result.innerHTML+=n+"<br>";
+                count++;
+            }n=n+1;
+        }
+    }
+    function isPrimeNum(n){
+        if (n<2) return false;
+        for (let i = 2;i <= Math.sqrt(n); i++) {
+            if (n%i===0) {
+                return false;
+            }
+        } return true;
+    }
+</script>
+</body>
+</html>
