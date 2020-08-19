@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>draw-right-triangle</title>
+</head>
+<body>
+<!--Bài 3: In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau-->
+<h1>Vẽ 4 hình tam giác vuông</h1>
+<input type="number" id="row" placeholder="Hãy nhập số dòng của hình tam giác" style="width:300px">
+<button id="draw" onclick="draw()">Vẽ</button>
+<script>
+
+    function draw() {
+        let row=parseInt(document.getElementById("row").value);
+        for (let i = 1; i <=row ; i++) {
+            for (let j = 1; j <= i ; j++){
+                document.write("*")
+            } document.write("<br>");
+        } document.write("<br>");
+
+        for (let i = row; i >=1 ; i--) {
+            for (let j = 1; j <= i ; j++){
+                document.write("*")
+            } document.write("<br>");
+        }document.write("<br>");
+
+        for (let i = 1; i <=row ; i++) {
+            for (let j = 1; j <= row ; j++){
+                if(j<=(row-i)){
+                    document.write("&nbsp;&nbsp;");
+                } else document.write("*");
+            } document.write("<br>");
+        }document.write("<br>");
+
+        for (let i = row; i >=1 ; i--) {
+            for (let j = 1; j <= row ; j++){
+                if(j<=(row-i)){
+                    document.write("&nbsp;&nbsp;");
+                } else document.write("*");
+            } document.write("<br>");
+        }document.write("<br>");
+    }
+
+</script>
+</body>
+</html>
